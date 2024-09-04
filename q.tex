@@ -1,0 +1,92 @@
+Use cases:
+Allow sharing of blocks between views
+
+Take a block and start a whole sub-ideation process on it
+Employ pre-defined lateral thinking techniques on any idea
+Reorganize the way a view presents blocks
+Make a copy of a set of views with a branching history
+
+
+Design Todos:
+How do views relate to each other
+View group copies
+How do you create a new view (importing blocks)
+View Group Hierarchy/Organization system - when you have hundreds of views and groups of groups, how do you refactor and organize?
+- how do we handle view recursion? In the recursive case the new system is in some ways a child view group, in some ways its own.
+How do we rearrange things in the view, i.e. the order of the blocks
+How do we turn a block into its own view, for example to break it out of a scratch pane? A set of blocks being broken out into their own view, and a set of blocks becoming a view group
+How do I turn all of this into a design document?
+When I'm doing something like building my data science toolbox, I need that to be really well supported. This is an easy case of doing PDF-based learning and knowledge organization
+
+Interface Todos:
+How to choose which parent views a new block inherits? The parent view doesn't necessarily have to be one, because that would allow us to edit other views
+How to alter the views that a block belongs to
+Ability to take a group of blocks in an editor and turn them into a group
+View Relationship Editor:
+- determines which views an editor inherits from when building new views
+- should include some way to import just a piece of another view
+View Group Editor
+- creation of new view groups
+- altering existing groups
+- templating system
+Infinitely nestable tab group system. Root nodes in the tab group system are called projects.
+"Go To" like COC or something like that. Should be able to easily inspect any view at any time.
+FZF style way to inspect any view or view group at any time
+Adding blocks from another view by quickly displaying the current view and the target view side-by-side so you can use either drag and drop or vim commands to pull the blocks over
+
+Good features:
+
+While it is possible to share blocks and views accross projects, there should be some level of complete separateness possible. There should be a checklist allowing you to decide which projects you want to share blocks with.
+Moving blocks around via drag and drop. You should be able to drag and drop everything.
+
+
+Good defaults:
+Blocks created in a view are automatically assoicated with that view
+It is possible to let a block be a "sibling" of other blocks in the view, perhaps by pressing enter on that line.
+Lazy naming, good default titles. Make it really easy to name from the beginning (and rename later), but don't require a name right away so as to minimize friction
+
+
+Fundamental Features:
+Good system for showing the grouping of blocks in a view
+Scratch buffer that can be dissected
+View templates
+The scratch buffer:
+- can be easily hidden and then shown again
+- is visibly distinct from the other buffers and larger
+
+
+Useful features:
+Vim Keybindings
+Desktop app w/ Electron for offline use - something this excellent absolutely needs to be able to be used offline, because that's where all the good thinking happens
+Random stimulation on a sidebar somewhere
+Marketing - the best way to explain the value proposition is to try to do the same ideation project 3 ways: with a single text file, with Notion/something like that, and then with Thinky
+
+Advanced features:
+Using AI to create views by filtering blocks to find all that are relevant to a certain topic
+
+
+-----------------------------------------
+Q Thoughts from before this:
+Definitely want pre-configured ideation axes because there
+
+An important part of developing the system is developing good nomenclature to go with it. The whole "axes" nomenclature wasn't quite good enough because it was too technical and didn't roll off the tongue. Good nomenclature is important
+
+When you're ideating in a space, you're really trying to map out the space, which is definitely a combinatorial problem with a fractal pattern. But the point is, you aren't trying to do a depth-first deductive process. You're coming up with a bunch of ideas for each axis and sub-axis. Once you do a lot of ideating, you have a lot done. You could really do several ideas based on just one ideation session.
+
+One interesting pattern that I notice I run into is that whatever structure I'm using recursively retains the same fields when we go down a level. Use case example: I have panes for "villains, scary moments, core ideas, and locations". I want to be able to have scary moments that aren't attached to a villain (or perhaps that apply to more than one villain) but I also want each villain to have their own list of specific associated scary moments. Figuring out this kind of pattern is a necessary feature to launch.
+- the solution to this is going to be a really sophisticated parent/child situation that allows for really easy modifying of the parent/child tree as well as really good defaults so that you don't have to laboriously set it up each time. Getting the right defaults and the right modification system will be really useful.
+- handling this also means being able to "refresh" the boards and make another blank copy to go another direction. USE CASE: I was working on a scary story about the woods, when I decided to pivot to aliens. This creates a fork where I want to be able to take the structure (and some of the ideas) that I had going for my first story and then use them for my second story, without messing up the first story. This isn't a downstream for, it's actually a retroactive upstream fork. What's more, I want to be able to share a lot of the ideas (for example potential characters) between the two branches. But I don't want to be sharing the entire list of potential characters. In addition to excellent parent/child relationships, the relationships need to be granular (and have a good corresponding organization system) so that I can manage sharing only pieces between two ideation panes. So really, I need to do a great job managing not just parent/child, but the sharing web. The sharing web manages which ideas are shared with which other panes. In addition, you want to be able to organize and group the ideas vertically in the pane
+- One limiting assumption that I have here is that the ideas need to be a simple vertical text box. A pane doesn't need to be a linear list of text. A great way to think about the pane is that it is just a view put on top of blocks in our web of ideas.
+
+So now we are arriving at a whole new way to view the product. It isn't a tree (or even a web) of panes. We have several elements. I still need good nomenclature for this, but now I know we have the block (one item in a list of ideas) as the fundamental unit. We just have a sea of these, and we need to impose some sort of organization on them.  The proper way to organize these is the fundamental problem we need to crack to make this a successful product. The issues:
+- Refactoring after I've already done a bunch of work
+- Rapidly setting up a new organization or modifying it
+- Having organizations with a fractal structure
+
+
+The Development Cycle:
+- Create a list of use cases that need to be covered well
+- Come up with a hypothesis (design plan) that tries to cover all of the existing use cases well.
+- Test it and add use cases that are missing, as well as friction points (where we are not properly handling a use case even if it's technically allowed)
+
+Important comment on the development cycle - balance design ambition with the fact that the best way to get new direction is to build the thing and see what happens. Remember, progress happens most quickly when there is balanced dialogue between deep theoretical thinking and experimental exploration

@@ -1,0 +1,64 @@
+The core design problems at the heart of Thinky:
+
+- windowing/tabs/etc
+- linking ideas together in a DRY manner
+- combining the previous two to handle the fractal nature of ideation
+
+
+What about other businesses? What else would I build if I had to build something?
+
+The ideal customers are internet users.
+
+What are the main hopes and dreams of these people?
+
+Personal Development
+- make them better in some way, ideally something that brings them status or makes them feel better about themselves
+
+So a good way to find startup ideas is to take the most popular self-help books and turn them into products
+Fixing people's insecurities is one of the best "painkiller" sources out there
+
+What are people's biggest sources of insecurity?
+- looks
+- money
+- status (Effectively "social ability")
+- intelligence
+- sexual prowess
+- success/efficacy (the ability to accomplish cool things)
+
+If an app can claim to resolve any of these things in a meaningful way, you have a consumer hit on your hands
+
+Let's brainstrorm something for each of these:
+
+Looks: - a course/checklist/etc that gives you everything you need for a complete makeover. Advertised as "This course will serve the role of Ryan Gosling in Crazy, Stupid, Love." Properly marketed this would definitely just absolutely fly off the shelves. Work w/ Derek Guy and you have an easy million for sure.
+
+How could you augment something like this with software?
+- a very well designed link aggregator for getting the best "fashion." An app for managing your wardrobe, building a perfect capsule wardrobe
+It would serve 2 functions; managing your inventory, as well as providing awesome community-vetted links and buying guides to fill in the holes in your wardrobe
+- it would also help you craft your inventory skeleton
+- there would have to be a large website, lots of videos, etc
+- it would be a fascinating hybrid of a content-driven business model, a link aggregator, and a consumer app. Monetized 100% by affiliate links
+
+**Extension**
+An app for tracking all your possessions. A personal "inventory" app.
+- If you are going to live a clutter-free life or embrace minimalism, this would be a terrific app
+
+Status:
+
+Status is largely projected. On Survivor it matters little what your actual outside status is, its all about projecting status
+- This would combine trememndously with the "looks" part of the stack
+
+Money: Again, a course
+
+
+
+Is there a B2B equivalent to these things?
+
+
+Professional Success
+- make them better at their job, or make it require less effort
+
+-------------
+
+What would my theoretical flashcard service look like?
+
+-
